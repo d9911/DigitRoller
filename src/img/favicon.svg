@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">DigitRoller</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#182132" />
+      <stop offset="1" stop-color="#080b12" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#90caf9" />
+      <stop offset="1" stop-color="#ce93d8" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <rect x="94" y="76" width="324" height="360" rx="76" fill="#111722" stroke="url(#accent)" stroke-width="18" />
+  <path d="M126 256h260" stroke="#2d3a4f" stroke-width="12" />
+  <text x="256" y="335" fill="url(#accent)" font-family="ui-monospace, monospace" font-size="224" font-weight="700" text-anchor="middle">9</text>
+</svg>

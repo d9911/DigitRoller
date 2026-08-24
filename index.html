@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Number Roller (pure HTML/CSS/JS)</title>
+    <title>DigitRoller — анимированный счётчик чисел</title>
     <link rel="stylesheet" href="src/style.css" />
     <script defer src="src/script.js"></script>
+    <meta name="description" content="Интерактивный анимированный роллер чисел на чистых HTML, CSS и JavaScript." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://digit-roller.d9911.org/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DigitRoller — анимированный счётчик чисел" />
+  <meta property="og:description" content="Интерактивный анимированный роллер чисел на чистых HTML, CSS и JavaScript." />
+  <meta property="og:url" content="https://digit-roller.d9911.org/" />
+  <meta property="og:image" content="https://digit-roller.d9911.org/src/img/icon-512.png" />
+  <meta property="og:image:alt" content="DigitRoller logo" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DigitRoller — анимированный счётчик чисел" />
+  <meta name="twitter:description" content="Интерактивный анимированный роллер чисел на чистых HTML, CSS и JavaScript." />
+  <meta name="twitter:image" content="https://digit-roller.d9911.org/src/img/icon-512.png" />
+  <link rel="icon" type="image/svg+xml" href="src/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="src/img/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png" />
+  <link rel="manifest" href="src/manifest.webmanifest" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "DigitRoller",
+      "url": "https://digit-roller.d9911.org/",
+      "description": "Интерактивный анимированный роллер чисел на чистых HTML, CSS и JavaScript.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "inLanguage": [
+        "ru"
+      ],
+      "isAccessibleForFree": true
+    }
+  </script>
   </head>
   <body>
-    <div class="app">
+    <main class="app" id="main-content">
+      <h1>DigitRoller</h1>
       <div class="controls">
         <div class="field">
           <label for="from">Текущее значение</label>
@@ -22,12 +58,12 @@
       </div>
 
       <div class="card">
-        <div class="label">Просмотр</div>
+        <h2 class="label">Просмотр</h2>
         <div class="row">
           <div id="roller" class="roller" aria-live="polite"></div>
         </div>
         <div class="note" style="margin-top: 8px">Цифры прокручиваются циклически (0→9→0). Нецифровые символы меняются сразу.</div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
