@@ -1,6 +1,8 @@
 {
   "name": "DigitRoller",
   "short_name": "DigitRoller",
+  "id": "/",
+  "lang": "ru",
   "description": "Интерактивный анимированный роллер чисел на чистых HTML, CSS и JavaScript.",
   "start_url": "/",
   "scope": "/",
@@ -11,12 +13,14 @@
     {
       "src": "img/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "img/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
